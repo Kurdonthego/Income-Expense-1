@@ -25,21 +25,24 @@ What changes would you make to the program if you had the chance to:
 - An Issue I ran into was the file expense function not working, it would just keep looping.
 
 ### Response 2:
-Name of tester:
+Name of tester: Zirek Osman
 
 What do you like about the program:
+- Its easy to use it will help me track my income and purchases
 
 Do you think this program solves the problem of not tracking your purchases:
+- I think this will solve the problam as it will help me to track my purchases, I like this idea personally and it seems to be good
 
 What changes would you make to the program if you had the chance to:
+- Fix the program so i can check my available balance
 
 
 ### Response 3:
-Name of tester:
+Name of tester: Zayd A
 
 What do you like about the program:
-
+- Pretty straight forward and easy to use
 Do you think this program solves the problem of not tracking your purchases:
-
+- As much as it looks like it does I personally would not use it unless it was turned into an app :)
 What changes would you make to the program if you had the chance to:
-
+- Add a cool title screen or credits to this program as it just starts randomly with no other options or any welcoming

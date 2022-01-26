@@ -25,6 +25,7 @@ expense_choice = ("[1] File expense", "[2] Check filed expense")
 
 
 def clearConsole():
+    '''Function to clear the console each time an input is selected'''
     command = 'clear'
     if os.name in ('nt', 'dos'):
         # If Machine is running on Windows, use cls
