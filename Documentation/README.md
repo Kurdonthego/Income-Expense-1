@@ -1,4 +1,4 @@
-## Income-Expense Recorder
+# Income-Expense Recorder
 
 ### Why was this created?
 #### In order to use this code properly you must first understand the code and the purpose. The creator has made this program to help people with bad spending habits. Including those who dont understand what budgeting means.

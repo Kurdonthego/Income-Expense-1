@@ -1,7 +1,7 @@
 # Course: CS 30
 # Period: 3
 # Date created: December 25th, 2021
-# Date modified: January 23th, 2022
+# Date modified: January 25th, 2022
 # Name: Zana Osman
 # Description: income for the program
 
@@ -9,49 +9,41 @@ i1 = []
 i2 = []
 i3 = []
 
-current_inc = i1
 
-income = 0
+def file_choice_inc():
+    ask_which = input("File entry 1, 2 or 3\n>")
+    if ask_which == "1":
+        amount1 = int(input("How much have you made today?"))
+        if amount1 > 0:
+            i1.append(amount1)
+    elif ask_which == "2":
+        amount2 = int(input("How much have you made today?"))
+        if amount2 > 0:
+            i2.append(amount2)
+    elif ask_which == "3":
+        amount3 = int(input("How much have you made today?"))
+        if amount3 > 0:
+            i3.append(amount3)
 
 
-def income_checker():
-    """Checks to see which income statement is empty"""
-    global current_inc
-    if income == 1:
-        current_inc = i1
-    elif income == 2:
-        current_inc = i2
-    elif income == 3:
-        current_inc = i3
-
-
-def Add_income():
-    global income
-    income_checker()
-    amount = input(str("How much have you made today?"))
-    if amount > 0:
-        income += 1
-        i1.append()
+amount1 = i1
+amount2 = i2
+amount3 = i3
 
 
 def see_income():
-    print(i1)
-    print(i2)
-    print(i3)
+    chosen_to_check = input(
+        str("Which entry would you like to see? [1, 2, 3]\n>"))
+    global amount1, amount2, amount3
+    if chosen_to_check == "1":
+        print(amount1)
+    elif chosen_to_check == "2":
+        print(amount2)
+    elif chosen_to_check == "3":
+        print(amount3)
 
 
 def total_income():
-    sum = i1 + i2 + i3
-    print("sum:", sum)
-
-
-def reset_income():
-    """Resets all income statements made"""
-    global current_inc
-    global income
-    income -= 1
-    while income > 1:
-        income_checker
-        current_inc.clear()
-        income -= 1
-    income += 1
+    global amount1, amount2, amount3
+    sum = amount1 + amount2 + amount3
+    print(sum)
