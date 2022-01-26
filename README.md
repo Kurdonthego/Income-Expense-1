@@ -10,6 +10,3 @@
 
 ### Instructions on Use
 #### To start the code simply press the 'Run' button on the top of the screen or hit Ctrl+Enter to start it. When in the menu you have three options Income, Expense and Balance. When filing an Income it will display as a positive number, Expenses as a negative. The Balance option is the Income minus Expense, If the Balance icon is green it means your Income or money is the positive and if red then vise versa. To stop the code at any given time simply type 'quit' and the program will stop.
-
-### Alpha Testing
-#### Originally when testing the code the idea of a bland UI was too basic and the white text hurt my eyes, that is when the idea for a green for good and red for bad was created. In the initial stages aswell the code was very basic and ideas for extras were made like a seperate module for Income and Expense to easily organize the code.

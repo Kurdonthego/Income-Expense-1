@@ -24,7 +24,7 @@ income_choice = ("[1] File income", "[2] Check filed income")
 expense_choice = ("[1] File expense", "[2] Check filed expense")
 
 
-def clearConsole():
+def clear_console():
     '''Function to clear the console each time an input is selected'''
     command = 'clear'
     if os.name in ('nt', 'dos'):
@@ -34,53 +34,50 @@ def clearConsole():
 
 
 def check_positive():
-    '''Checks to see if the total is positive or negative'''
-    a = inc.total_income()
-    b = exp.total_expense()
-    total_i_e = a - b
-    if total_i_e < 1:
-        print("\033[1;32;40m Bright Green  \n")
-    elif total_i_e > 1:
-        print("\033[1;31;40m Red  \n")
+    '''Shows totals from both side'''
+    print("Total Income:\n")
+    inc.total_income_balance()
+    print("Total Expense:\n")
+    exp.total_expense_balance()
 
 
 while True:
-    """Function for the menu"""
+    '''Function for the menu'''
     for choices in starting_option:
         print(f"\n{choices}")
     menuchoice = str(input("\n>"))
-    clearConsole()
+    clear_console()
     if menuchoice == "1":
         for choices in income_choice:
             print(f"\n{choices}")
         income_option = input("\n>")
         if income_option == "1":
-            clearConsole()
+            clear_console()
             inc.file_choice_inc()
         elif income_option == "2":
-            clearConsole()
+            clear_console()
             inc.total_income()
     elif menuchoice == "2":
         for choices in expense_choice:
             print(f"\n{choices}")
         expense_option = input("\n>")
         if expense_option == "1":
-            clearConsole()
+            clear_console()
             exp.file_choice_exp()
         elif expense_option == "2":
-            clearConsole()
+            clear_console()
             exp.total_expense()
     elif menuchoice == "3":
-        clearConsole()
+        clear_console()
         print("Balance:")
         check_positive()
     elif menuchoice == "4":
         if menuchoice == "4":
-            clearConsole()
+            clear_console()
             choice_s = str(
                 input("\nAre you sure you would like to exit? [Y] "))
             if choice_s == "Y":
-                clearConsole()
+                clear_console()
                 print("Exiting, Goodbye")
                 sys.exit()
         else:

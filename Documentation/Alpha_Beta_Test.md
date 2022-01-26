@@ -2,7 +2,7 @@
 
 ## Alpha Testing Respones
 
-#### Tested function for recording, noticed it does not record it will enough and does not add the numbers properly, found out that the total is not working and that it needs working on. Needs to have a function to convert a list number into a str in order for it to be valid in the subtracting process
+#### Tested function for recording, noticed it does not record it will enough and does not add the numbers properly, found out that the total is not working and that it needs working on. Needs to have a function to convert a list number into a str in order for it to be valid in the subtracting process, originally when testing the code the idea of a bland UI was too basic and the white text hurt my eyes, that is when the idea for a green for good and red for bad was created. In the initial stages aswell the code was very basic and ideas for extras were made like a seperate module for Income and Expense to easily organize the code.
 
 ## Beta Testing Responses
 
@@ -24,6 +24,7 @@ Do you think this program solves the problem of not tracking your purchases:
 What changes would you make to the program if you had the chance to:
 - An Issue I ran into was the file expense function not working, it would just keep looping.
 
+
 ### Response 2:
 Name of tester: Zirek Osman
 
@@ -42,7 +43,9 @@ Name of tester: Zayd A
 
 What do you like about the program:
 - Pretty straight forward and easy to use
+
 Do you think this program solves the problem of not tracking your purchases:
 - As much as it looks like it does I personally would not use it unless it was turned into an app :)
+
 What changes would you make to the program if you had the chance to:
 - Add a cool title screen or credits to this program as it just starts randomly with no other options or any welcoming

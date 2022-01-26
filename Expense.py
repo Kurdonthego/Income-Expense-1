@@ -4,7 +4,7 @@
 # Date modified: January 25th, 2022
 # Name: Zana Osman
 # Description: Expense for the program
-global clearConsole
+global clear_console
 
 e1 = []
 e2 = []
@@ -12,18 +12,18 @@ e3 = []
 
 
 def file_choice_exp():
-    '''Takes expense from the use'''
+    '''Takes expense from the user'''
     ask_which = input("File entry 1, 2 or 3\n>")
     if ask_which == "1":
         e_amount1 = int(input("How much have you made today?"))
         if e_amount1 > 0:
             e1.append(e_amount1)
     elif ask_which == "2":
-        e_amount2 = int(input("How much have you made today?"))
+        e_amount2 = int(input("How much have you made today?\n> "))
         if e_amount2 > 0:
             e2.append(e_amount2)
     elif ask_which == "3":
-        e_amount3 = int(input("How much have you made today?"))
+        e_amount3 = int(input("How much have you made today?\n> "))
         if e_amount3 > 0:
             e3.append(e_amount3)
 
@@ -51,3 +51,10 @@ def total_expense():
     global e_amount1, e_amount2, e_amount3
     sum = e_amount1 + e_amount2 + e_amount3
     print(sum)
+
+
+def total_expense_balance():
+    '''Adds all the expenses into one for final count'''
+    global e_amount1, e_amount2, e_amount3
+    total_exp_sum = sum(e1 + e2 + e3)
+    print(total_exp_sum)
